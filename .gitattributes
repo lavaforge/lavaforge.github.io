@@ -1,0 +1,5 @@
+# Set default behaviour to automatically normalize line endings.
+* text=auto
+
+# Disable diff
+package-lock.json -diff
