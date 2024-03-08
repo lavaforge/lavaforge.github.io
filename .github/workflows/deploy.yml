@@ -36,6 +36,9 @@ jobs:
       - name: build
         run: npm run build
 
+      - name: set CNAME
+        run: echo 'lavaforge.net' > $DIRECTORY/CNAME
+
       - name: create commit
         run: |
           git --work-tree $DIRECTORY add --all
